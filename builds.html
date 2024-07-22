@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunidade TL - Builds</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Comunidade TL</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="forum.html">Fórum</a></li>
+        <li><a href="builds.html">Builds</a></li>
+        <li><a href="guides.html">Guias</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="events.html">Eventos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="builds">
+      <h1>Painel de Builds</h1>
+      <div class="build-form">
+        <h2>Enviar Nova Build</h2>
+        <form action="submit_build.html" method="post">
+          <label for="class">Classe:</label>
+          <select id="class" name="class">
+            <option value="warrior">Guerreiro</option>
+            <option value="mage">Mago</option>
+            <option value="archer">Arqueiro</option>
+          </select>
+          <label for="build-name">Nome da Build:</label>
+          <input type="text" id="build-name" name="build-name" required>
+          <label for="description">Descrição:</label>
+          <textarea id="description" name="description" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div class="build-list">
+        <h2>Builds Populares</h2>
+        <ul>
+          <li><a href="build_detail.html">Build 1 - Guerreiro</a></li>
+          <li><a href="build_detail.html">Build 2 - Mago</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Comunidade TL. Todos os direitos reservados.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
