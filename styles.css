@@ -19,14 +19,22 @@ header {
     width: 100%;
     z-index: 1000;
     display: flex;
+    padding: 10px 50px;
+    justify-content: space-between;
     align-items: center;
     top: 0;
 }
 
+nav ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows the menu to wrap if needed */
+}
+
 header .logo {
-    font-size: 32px;
+    font-size: 24px;
     font-family: 'Cinzel Decorative', cursive;
-    color: #ffd700;
+    color: #8a814d;
     text-indent: 0;
     margin-right: 20px; /* Espaçamento entre a logo e o menu */
 }
